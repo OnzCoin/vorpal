@@ -357,7 +357,7 @@ describe('integration tests:', function () {
         });
       });
 
-      it.only('should parse base64 option', function (done) {
+      it('should parse base64 option', function (done) {
         exec('say "KjyhJ+/Peyv2KsjDsfWs9pl8q2K6n941Z9GI7cusvF3IF3+4jQOoaRzgM0j1abEhvKnno8Q79cBWOC81/4Q8CQ=="', done, function () {
           stdout().should.equal('KjyhJ+/Peyv2KsjDsfWs9pl8q2K6n941Z9GI7cusvF3IF3+4jQOoaRzgM0j1abEhvKnno8Q79cBWOC81/4Q8CQ==');
           done();
